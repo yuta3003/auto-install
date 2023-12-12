@@ -1,0 +1,76 @@
+### DotfilesSh ###
+local-patch
+patched-src
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# シンボリックリンクはGitから排除
+config/bash/.bash_aliases
+config/bash/.bash_profile
+config/bash/.bashrc
+config/bash/.profile
+config/git/config
+config/git/message
+config/git/ignore
+config/homebrew/Brewfile
+config/homebrew/localhost.homebrew-autoupdate.plist
+config/neovim/init.vim
+config/screen/.screenrc
+config/ssh/config
+config/starship/starship.toml
+config/tmux/.tmux
+config/tmux/tmux.conf
+config/vim/.vimrc
+config/virtualbox/networks.conf
+config/vscode/keybindings.json
+config/vscode/settings.json
+config/zsh/.zaliases
+config/zsh/.zprofile
+config/zsh/.zshrc
+config/zsh/.zshenv
+
+# tmux plugins
+tmux/a64/.tmux/plugins/
+tmux/x64/.tmux/plugins/
+tmux/ubuntu/.tmux/plugins/
