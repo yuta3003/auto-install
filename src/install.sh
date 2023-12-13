@@ -19,17 +19,17 @@ main() {
       install_tpm
       install_vim_plug
       #make deploy
-      source "${SCRIPT_DIR}/deploy.sh"
+      # source "${SCRIPT_DIR}/deploy.sh"
       #make init
       launchctl load ~/Library/LaunchAgents/localhost.homebrew-autoupdate.plist
       # Macの設定を変更
-      source "${SCRIPT_DIR}/defaults.sh"
-      if ask_yes_no "再起動しますか？"; then
-        echo 'Rebooting to reflect settings'
-        sudo shutdown -r now
-      else
-        echo "再起動をスキップしました。"
-      fi
+      # source "${SCRIPT_DIR}/defaults.sh"
+      # if ask_yes_no "再起動しますか？"; then
+      #   echo 'Rebooting to reflect settings'
+      #   sudo shutdown -r now
+      # else
+      #   echo "再起動をスキップしました。"
+      # fi
       ;;
     "OSX(a64)")
       check_install_xcode
@@ -40,17 +40,17 @@ main() {
       install_tpm
       install_vim_plug
       #make deploy
-      source "${SCRIPT_DIR}/deploy.sh"
+      # source "${SCRIPT_DIR}/deploy.sh"
       #make init
       launchctl load ~/Library/LaunchAgents/localhost.homebrew-autoupdate.plist
       # Macの設定を変更
-      source "${SCRIPT_DIR}/defaults.sh"
-      if ask_yes_no "再起動しますか？"; then
-        echo 'Rebooting to reflect settings'
-        sudo shutdown -r now
-      else
-        echo "再起動をスキップしました。"
-      fi
+      # source "${SCRIPT_DIR}/defaults.sh"
+      # if ask_yes_no "再起動しますか？"; then
+      #   echo 'Rebooting to reflect settings'
+      #   sudo shutdown -r now
+      # else
+      #   echo "再起動をスキップしました。"
+      # fi
       ;;
     "Ubuntu")
       apt-get update && \
@@ -64,13 +64,13 @@ main() {
       create_dotconfig_directoryyy
       install_tpm
       install_vim_plug
-      source "${SCRIPT_DIR}/deploy.sh"
-      if ask_yes_no "再起動しますか？"; then
-        echo 'Rebooting to reflect settings'
-        sudo shutdown -r now
-      else
-        echo "再起動をスキップしました。"
-      fi
+      # source "${SCRIPT_DIR}/deploy.sh"
+      # if ask_yes_no "再起動しますか？"; then
+      #   echo 'Rebooting to reflect settings'
+      #   sudo shutdown -r now
+      # else
+      #   echo "再起動をスキップしました。"
+      # fi
       ;;
     "ArchLinux")
       ;;
