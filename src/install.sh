@@ -3,7 +3,7 @@ set -eu
 
 CURRENT_DIR=$(cd "$(dirname "${0}")"; pwd)
 DOT_DIRECTORY=$(cd "${CURRENT_DIR}";cd ./../..; pwd)
-SCRIPT_DIR="${DOT_DIRECTORY}/etc/scripts"
+SCRIPT_DIR="${DOT_DIRECTORY}/etc/src"
 MKLINK_SCRIPT_DIR="${SCRIPT_DIR}/mklink"
 DEPLOY_LIST_DIR="${DOT_DIRECTORY}/etc/deploylist"
 OS_TYPE=""
